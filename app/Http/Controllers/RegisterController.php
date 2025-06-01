@@ -38,6 +38,7 @@ class RegisterController extends Controller
             ]);
         }
 
-        return "Usuário registrado com sucesso!";
+        return redirect()->route('register.form')->with('success', 'Usuário registrado com sucesso!');
+
     }
 }

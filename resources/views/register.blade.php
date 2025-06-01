@@ -13,6 +13,13 @@
         </div>
     @endif
 
+    @if(session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+
+
     {{-- CAMPOS DO FORMULÁRIO --}}
     <label>Nome completo:</label>
     <input type="text" name="name" value="{{ old('name') }}" required>
